@@ -234,7 +234,7 @@ section {
 
 .about .about-content .right .text {
     font-size: 25px;
-    font-weight: 600px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -601,7 +601,6 @@ footer span a:hover {
     }
     .max-width {
         max-width: 800px;
-        ;
     }
     .about .about-content .column {
         width: 100%;
