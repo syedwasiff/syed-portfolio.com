@@ -14,6 +14,12 @@ $(document).ready(function() {
     $('.scroll-up-btn').click(function() {
         $('html').animate({ scrollTop: 0 });
     });
+    var typed = new Typed(".typing", {
+        strings: ["Frontend Developer", "Web Designer", "Backend Developer"],
+        typespeed: 100,
+        backspeed: 60,
+        loop: true
+    })
 
     $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
