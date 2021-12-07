@@ -25,4 +25,8 @@ $(document).ready(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+    $('.ProjectDD').click(function(){
+        $('.DropdownContainer').slideToggle(200);
+    })
+    
 });

@@ -539,6 +539,25 @@ footer span a {
 footer span a:hover {
     text-decoration: underline;
 }
+.DropdownContainer {
+    display: none;
+    background-color: #000000;    
+    position: absolute;
+    top: 65px;
+    right: 150px;
+    border-radius: 10px;
+}
+.DropdownContainer ul li a{
+    margin-left: 0 !important;
+    padding: 10px 10px;
+}
+
+.dropdown-content li{
+    display: flex!important;
+}
+.dropdown-content a{
+    color: #fff;
+}
 
 @media (max-width: 1300px) {
     .home .max-width {
