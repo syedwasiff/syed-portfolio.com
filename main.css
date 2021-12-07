@@ -64,11 +64,11 @@ html {
     transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover {
+.active,.navbar .menu li a:hover {
     color: crimson;
 }
 
-.navbar.sticky .menu li a:hover {
+.active,.navbar.sticky .menu li a:hover {
     color: #fff;
 }
 
@@ -541,11 +541,12 @@ footer span a:hover {
 }
 .DropdownContainer {
     display: none;
-    background-color: #000000;    
+    background-color: #111;    
     position: absolute;
-    top: 65px;
+    top: 70px;
     right: 150px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .DropdownContainer ul li a{
     margin-left: 0 !important;

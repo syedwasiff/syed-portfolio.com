@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $(window).scroll(function() {
+$(document).ready(function () {
+    $(window).scroll(function () {
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
@@ -11,7 +11,7 @@ $(document).ready(function() {
             $('.scroll-up-btn').removeClass("show");
         }
     });
-    $('.scroll-up-btn').click(function() {
+    $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
     });
     var typed = new Typed(".typing", {
@@ -21,12 +21,20 @@ $(document).ready(function() {
         loop: true
     })
 
-    $('.menu-btn').click(function() {
+    $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-    $('.ProjectDD').click(function(){
+    $('.ProjectDD').click(function () {
         $('.DropdownContainer').slideToggle(200);
     })
-    
+    var btnContainer = document.getElementById("myDIV");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
 });
